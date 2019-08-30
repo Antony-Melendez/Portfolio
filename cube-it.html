@@ -9,8 +9,211 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,300,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="" href="./assets/js/app.js">
     <title>Cube.It</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="1500x1500"
+      href="assets/img/CubeItLogo.png"
+    />
+    <!--Main style-->
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="body">
+      <!-- This is the nav bar-->
+      <header>
+        <div class="topnav" id="myTopnav">
+          <a href="./index.html" >Epic Prestige</a>
+          <a href="./cube-it.html" class="active">cube-it</a>
+          <a href="./launcher.html">launcher</a>
+          <a href="./team.html">team</a>
+          <a href="./gallery.html">gallery</a>
+          <a href="./news.html">news</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <svg width="30" height="20" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3"/>
+              <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3"/>
+              <line y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3"/>
+              </svg>
+          </a>
+        </div>
+      </header>  
+
+      <!--Main content-->
+      <main>
+
+        <!--main page-->
+
+        <section class="page">
+          <div class="details">
+            <h1>cube-it</h1>
+            <h2>Version 1.0</h2>
+            <p>Cube.It is a computer game in 
+              which the player is a cube and you have to control it so you can make
+               it to the end of each level, but keep in mind this game will keep you busy 
+               for a while as many find it "too hard" "too fast". You think you got what it
+                takes to beat the game ? </p>
+          </div>
+          <div class="hero">
+            <a href="cube-it.html">
+              <img
+                class="mainImg-left"
+                src="assets/img/cube-it-left.png"
+                alt="Cube.It left"
+              />
+              <img
+                class="mainImg-right"
+                src="assets/img/cube-it-right.png"
+                alt="Cube.It right"
+              />
+            </a>
+          </div>
+        </section>
+
+        <!--Second page-->
+
+        <section class="page">
+          <div class="details">
+            <h1>itch.io</h1>
+            <h2>
+              the full game is free to download in our website at itch.io 
+            </h2>
+            <p>
+             make sure to give us feedback there.
+            </p>
+          </div>
+          <div class="hero">
+              <div class="button" id="download">
+                  <a href="https://epic-prestige.itch.io/cubeit" target="_blank">download</a>
+                  </a>
+                </div> 
+        </section>
+        <!--third page-->
+
+        <section class="page-cubeit" >
+            <h1 style="text-align:center">Waves</h1>
+            <div class="row">
+            <div class="column">
+            <img src="./assets/img/CubeIt/wave 1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            <h2> Wave 1</h2>
+            <p>WAVE 1 IS ALL ABOUT GETTING USED TO THE GAME MECHANIC AND EXPLORING CUBE.IT THAT DOES NOT MEAN, THAT THE GAME WILL NOT BE CHALLENGING.</p>
+            </div>
+             <div class="column">
+            <img src="./assets/img/CubeIt/wave 2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <h2> Wave 2</h2>
+            <p>WAVE 1 IS ALL ABOUT GETTING USED TO THE GAME MECHANIC AND EXPLORING CUBE.IT THAT DOES NOT MEAN, THAT THE GAME WILL NOT BE CHALLENGING.</p>
+           </div>
+           <div class="column">
+          <img src="./assets/img/CubeIt/Wave 3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          <h2> Wave 3</h2>
+            <p>WAVE 1 IS ALL ABOUT GETTING USED TO THE GAME MECHANIC AND EXPLORING CUBE.IT THAT DOES NOT MEAN, THAT THE GAME WILL NOT BE CHALLENGING.</p>
+         </div>
+         <div class="column">
+        <img src="./assets/img/CubeIt/wave 4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        <h2> Wave 4</h2>
+            <p>WAVE 1 IS ALL ABOUT GETTING USED TO THE GAME MECHANIC AND EXPLORING CUBE.IT THAT DOES NOT MEAN, THAT THE GAME WILL NOT BE CHALLENGING.</p>
+        </div>
+        </div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./assets/img/CubeIt/wave 1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./assets/img/CubeIt/wave 2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./assets/img/CubeIt/Wave 3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./assets/img/CubeIt/wave 4.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>     
+            <div class="caption-container">
+             <p id="caption"></p>
+            </div>
+               <div class="column">
+                 <img class="demo cursor" src="./assets/img/CubeIt/wave 1.png" style="width:100%" onclick="currentSlide(1)" alt="Wave 1">
+              </div>
+              <div class="column">
+              <img class="demo cursor" src="./assets/img/CubeIt/wave 2.png" style="width:100%" onclick="currentSlide(2)" alt="Wave 2">
+              </div>
+                <div class="column">
+                <img class="demo cursor" src="./assets/img/CubeIt/Wave 3.png" style="width:100%" onclick="currentSlide(3)" alt="Wave 3">
+               </div>
+           <div class="column">
+           <img class="demo cursor" src="./assets/img/CubeIt/wave 4.png" style="width:100%" onclick="currentSlide(4)" alt="Wave 4">
+          </div>
+           </div>
+          </div>
+        </section>
+        </div>
+      </main>
+    </div>
+    <!--  JavaScript for the nav bar-->
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <!-- JavaScript for the lightbox-->
+    <script>
+      function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+  </body>
 </html>
+

@@ -9,62 +9,44 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,300,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="" href="./assets/js/app.js">
     <title>Welcome</title>
+    <link
+      rel="icon"
+      type="x/icon"
+      sizes="1500x1500"
+      href="assets/img/EpicPrestigeLogoPng.ico"
+    />
     <!--Main style-->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="portfolio">
+    <div class="body">
+      <!-- This is the nav bar-->
       <header>
-       <!--Nav starts here-->
-<nav>
-  <div class="logo">             
-    <a href="index.html">EPIC PRESTIGE</a>
-  </div>
-  <ul class="nav-links">
-      <li>
-           <div class="dropdown">
-              <button class="dropbtn"><a>NEWS</a>
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="cubeit-updates.html">CUBE.IT</a>
-                <a href="launcher-updates.html">LAUNCHER</a>
-              </div>
-            </div>
-       </li>
-      <li>
-          <a href="cube-it.html">CUBE.IT</a>
-      </li>
-       <li>
-          <a href="Launcher.html">LAUNCHER</a>
-       </li>
-      <li>
-          <a href="team.html">TEAM</a>
-      </li>
-      <li>
-          <a href="gallery.html">GALLERY</a>
-       </li>
-       <li>
-          <a href="index.html">HOME</a> 
-       </li>
-  </ul>
-  <div class="burger">
-    <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <line y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3"/>
-      <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3"/>
-      <line y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3"/>
-      </svg>
-      
-  </div>
-</nav>
-      </header>
+        <div class="topnav" id="myTopnav">
+          <a href="./index.html" class="active">Epic Prestige</a>
+          <a href="./cube-it.html">cube-it</a>
+          <a href="./launcher.html">launcher</a>
+          <a href="./team.html">team</a>
+          <a href="./gallery.html">gallery</a>
+          <a href="./news.html">news</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <svg width="30" height="20" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3"/>
+              <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3"/>
+              <line y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3"/>
+              </svg>
+          </a>
+        </div>
+      </header>  
 
       <!--Main content-->
       <main>
+
         <!--main page-->
 
-        <section class="page welcome">
+        <section class="page">
           <div class="details">
             <h1>Welcome</h1>
             <h2>To the official Epic Prestige website</h2>
@@ -88,7 +70,7 @@
 
         <!--Second page-->
 
-        <section class="page launcher">
+        <section class="page">
           <div class="details">
             <h1>The Launcher</h1>
             <h2>
@@ -100,16 +82,16 @@
             </p>
           </div>
           <div class="hero">
-            <a href="">
+            <a href="./launcher.html">
               <img
                 class="mainImg-left"
-                src="assets/img/launcher-left.png"
-                alt="waveone"
+                src="assets/img/launcher-right.png"
+                alt="launcher-left"
               />
               <img
                 class="mainImg-right"
-                src="assets/img/launcher-right.png"
-                alt="waveone"
+                src="assets/img/launcher-left.png"
+                alt="launcher-right"
               />
             </a>
           </div>
@@ -117,5 +99,16 @@
       </div>
       </main>
     </div>
+    <!-- this is the JavaScript-->
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
   </body>
 </html>
