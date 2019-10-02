@@ -10,14 +10,14 @@
       rel="stylesheet"
     />
     <link rel="" href="./assets/js/app.js">
-    <title>News</title>
-    <!--Main style-->
+    <title>Move.It</title>
     <link
       rel="icon"
-      type="x/icon"
+      type="image/png"
       sizes="1500x1500"
-      href="assets/img/EpicPrestigeLogoPng.ico"
+      href="assets/img/MoveItLogo.png"
     />
+    <!--Main style-->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -25,13 +25,13 @@
       <!-- This is the nav bar-->
       <header>
         <div class="topnav" id="myTopnav">
-          <a href="./index.html">Epic Prestige</a>
-          <a href="./cube-it.html">cube-it</a>
-          <a href="./Move-it.html">Move.It</a>
+          <a href="./index.html" >Epic Prestige</a>
+          <a href="./cube-it.html">Cube.It</a>
+          <a href="./Move-it.html" class="active">Move.It</a>
           <a href="./launcher.html">launcher</a>
           <a href="./team.html">team</a>
           <a href="./gallery.html">gallery</a>
-          <a href="./news.html"  class="active">news</a>
+          <a href="./news.html">news</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <svg width="30" height="20" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3"/>
@@ -49,30 +49,21 @@
 
         <section class="page">
           <div class="details">
-            <h1>
-              cube-it
-            </h1>
-            <h2>
-              version 1.0
-            </h2>
-            <p>
-                IN THIS VERSION OF THE GAME WE ADDED, A GAME LAUNCHER TO HELP THE PLAYER KNOW 
-                MORE ABOUT THE GAME, FOUR NEW LEVELS ,LIGHTS IN WAVE 4 ARE NOW STRONGER, DARK 
-                WAVE IS NOW BRIGHTER, NEW FEATURES TO THE GAME UI, FIXED MANY BUGS AND ADDED 
-                MORE SMALL FEATURES...
-            </p>
+            <h1>Move.It</h1>
+            <h2>Alpha 0.4.0</h2>
+            <p>currently under development</p>
           </div>
           <div class="hero">
-            <a href="cube-it.html">
+            <a href="Move-it.html">
               <img
                 class="mainImg-left"
-                src="assets/img/cube-it-left.png"
-                alt="Cube.It left"
+                src=""
+                alt=""
               />
               <img
                 class="mainImg-right"
-                src="assets/img/cube-it-right.png"
-                alt="Cube.It right"
+                src=""
+                alt=""
               />
             </a>
           </div>
@@ -82,37 +73,28 @@
 
         <section class="page">
           <div class="details">
-            <h1>
-              Launcher
-            </h1>
+            <h1>itch.io</h1>
             <h2>
-              version 0.4
+              the full game is free to download in our website at itch.io. 
             </h2>
             <p>
-                IN THIS VERSION OF THE GAME WE ADDED, A GAME LAUNCHER TO HELP THE PLAYER KNOW MORE ABOUT
-                 THE GAME, FOUR NEW LEVELS ,LIGHTS IN WAVE 4 ARE NOW STRONGER, DARK WAVE IS NOW BRIGHTER, 
-                 NEW FEATURES TO THE GAME UI, FIXED MANY BUGS AND ADDED MORE SMALL FEATURES.
+             make sure to give us feedback there.
             </p>
           </div>
           <div class="hero">
-            <a href="./launcher.html">
-              <img
-                class="mainImg-left"
-                src="assets/img/launcher-right.png"
-                alt="launcher-left"
-              />
-              <img
-                class="mainImg-right"
-                src="assets/img/launcher-left.png"
-                alt="launcher-right"
-              />
-            </a>
-          </div>
+              <div class="button" id="download">
+                  <a href="https://epic-prestige.itch.io/2d-game-alpha-01" target="_blank">Go to itch.io</a>
+                  </a>
+                </div> 
+                <div class="button" id="download">
+                    <a href="./Move.It.apk" target="">download apk</a>
+                    </a>
+                  </div> 
         </section>
-      </div>
+        </div>
       </main>
     </div>
-    <!-- this is the JavaScript-->
+    <!--  JavaScript for the nav bar-->
     <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
@@ -122,6 +104,45 @@
         x.className = "topnav";
       }
     }
+    </script>
+    <!-- JavaScript for the lightbox-->
+    <script>
+      function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
     </script>
   </body>
 </html>
