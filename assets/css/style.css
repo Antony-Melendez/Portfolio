@@ -167,11 +167,10 @@ a:visited {
   padding: 14px 25px;
 }
 .button {
-  overflow: hidden;
   align-self: center;
-  justify-self: center;
   display: flex;
-  width: 250px;
+  margin-left: 50px;
+  float: left;
 }
 #download a:hover,
 a:active {
@@ -353,6 +352,9 @@ img.hover-shadow {
   .column {
     width: 1020px;
   }
+  .button {
+    float: left;
+  }
 }
 
 /* Responsive for phones */
@@ -405,16 +407,34 @@ img.hover-shadow {
   .column img {
     margin-left: 20px;
   }
+  .button {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 667px) {
   .page-cubeit {
-    height: 310vh;
+    height: 50vh;
   }
-  .column {
+  .small-page {
+    height: 100vh;
+  }
+  .page {
+    height: 230vh;
+  }
+  .page-gallery {
+    height: 250vh;
+  }
+  .hero img a {
+    height: 50%;
+  }
+  .details {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  .row {
     display: block;
-    width: 940px;
-    float: left;
+    margin-left: 30px;
   }
 }
 @media (max-width: 568px) {
