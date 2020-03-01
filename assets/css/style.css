@@ -121,6 +121,13 @@ a {
   justify-self: center;
   display: flex;
 }
+.team {
+  overflow: hidden;
+  height: 500px;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+}
 /*The inside images*/
 .hero img {
   height: 500px;
@@ -137,6 +144,24 @@ a {
   transform: translate(0%, 0%);
 }
 .hero:hover .mainImg-left {
+  transform: translate(0%, 0%);
+}
+
+.team img {
+  height: 500px;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+.mainImg-right {
+  transform: translate(0%, 10%);
+}
+.mainImg-left {
+  transform: translate(0%, -10%);
+}
+.team:hover .mainImg-right {
+  transform: translate(0%, 0%);
+}
+.team:hover .mainImg-left {
   transform: translate(0%, 0%);
 }
 /*The text on the side*/
@@ -321,8 +346,8 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 1400px) {
-  .hero img .mainImg-left {
-    height: 450px;
+  .team img {
+    height: 400px;
     margin-left: 150px;
   }
 }
