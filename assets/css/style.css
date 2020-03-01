@@ -317,7 +317,11 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+@media screen and (max-width: 1129px) {
+  .hero img {
+    height: 300px;
+  }
+}
 /* Responsive for tablets */
 @media screen and (max-width: 1024px) {
   .page {
@@ -330,7 +334,7 @@ img.hover-shadow {
     height: auto;
   }
   .hero img {
-    height: 500px;
+    height: 400px;
   }
   .details {
     grid-row: 2/3;
