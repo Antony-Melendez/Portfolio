@@ -172,6 +172,10 @@ a:visited {
   margin-left: 50px;
   float: left;
 }
+h1 a {
+  text-decoration: none;
+}
+
 #download a:hover,
 a:active {
   color: #000;
