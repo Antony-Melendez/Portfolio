@@ -324,7 +324,7 @@ img.hover-shadow {
 @media screen and (max-width: 1400px) {
   .hero img {
     height: 450px;
-    margin-left: 150px;
+    margin: 150px;
   }
 }
 /* Responsive for tablets */
