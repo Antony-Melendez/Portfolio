@@ -175,7 +175,6 @@ a:visited {
 h1 a {
   text-decoration: none;
 }
-
 #download a:hover,
 a:active {
   color: #000;
@@ -322,9 +321,9 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 1400px) {
-  .hero img {
+  .hero img .mainImg-left {
     height: 450px;
-    margin: 150px;
+    margin-left: 150px;
   }
 }
 /* Responsive for tablets */
