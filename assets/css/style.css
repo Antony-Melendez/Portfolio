@@ -314,7 +314,7 @@ a:active {
   top: 0;
 }
 
-img {
+img  {
   margin-bottom: -1px;
 }
 
@@ -345,10 +345,23 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/* for laptops or small monitors */ 
 @media screen and (max-width: 1400px) {
   .team img {
     height: 400px;
     margin-left: 150px;
+  }
+  .hero img {
+    height: 400px;
+  }
+  .details h1 {
+    font-size: 38px;
+  }
+  .details h2 {
+    font-size: 28px;
+  }
+  .details p {
+    font-size: 18px;
   }
 }
 /* Responsive for tablets */
