@@ -55,14 +55,14 @@ a {
 .topnav .icon {
   display: none;
 }
-/* thise are the pages*/
+/* thsese are the pages*/
 .page {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
 .page-cubeit {
-  height: 100vh;
+  height: 80vh;
 }
 .page-gallery {
   height: 100vh;
@@ -184,6 +184,9 @@ a {
   padding: 20px 0px 50px 0px;
   margin-bottom: 45px;
 }
+.details a {
+  color: #ffffff;
+}
 /* the button */
 #download a:link,
 a:visited {
@@ -192,10 +195,11 @@ a:visited {
   padding: 14px 25px;
 }
 .button {
+  padding-top: 400px;
+  overflow: hidden;
   align-self: center;
+  justify-self: center;
   display: flex;
-  margin-left: 50px;
-  float: left;
 }
 h1 a {
   text-decoration: none;
@@ -212,7 +216,7 @@ a:active {
 }
 
 .row > .column {
-  padding: 0 8px;
+  padding: 20px 25px;
 }
 
 .row:after {
@@ -433,7 +437,7 @@ img.hover-shadow {
     display: flex;
   }
   .button {
-    margin-left: 70px;
+    margin-left: 0px;
   }
   .column h2 {
     font-size: 24px;
