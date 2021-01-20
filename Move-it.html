@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="Icon" href="assets/img/EpicPrestigeLogoPng.png" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,300,500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="Icon" href="assets/img/logos/MoveItLogo.png" />
     <link rel="" href="./assets/js/app.js">
     <title>Move.It</title>
     <link
@@ -41,34 +37,23 @@
       </header>  
       <!--Main content-->
       <main>
+
         <!--main page-->
         <section class="page">
           <div class="details">
             <h1>Move.It</h1>
             <h2>Alpha 0.4.0</h2>
-            <p>currently under development</p>
+            <p>On hold</p>
           </div>
-          <div class="hero">
+
+          <div class="image-container">
             <a href="Move-it.html">
               <img
-                class="mainImg-left"
-                src=""
-                alt=""
-              />
-              <img
-                class="mainImg-right"
                 src=""
                 alt=""
               />
             </a>
           </div>
-          <!--Downlaod button-->
-          <div class="hero">
-            <div class="button" id="download">
-              <a href="./Move.It.apk" download="Move.It.apk">download apk</a>
-              </a>
-            </div> 
-        </div>
         </section>
 
         <!--Second page-->
@@ -83,18 +68,28 @@
             </p>
           </div>
           <!--Link button to itch io-->
-          <div class="hero">
+          <div class="button-container">
             <div>
               <div class="button" id="download">
-                <a href="https://epic-prestige.itch.io/2d-game-alpha-01" target="_blank">Go to itch.io</a>
+                <a href="https://night-shield.itch.io/move-it" target="_blank">Go to itch.io</a>
                 </a>
                 </div> 
             </div>
         </div> 
+
+        <!--Downlaod button-->
+        <div class="button-container">
+          <div class="button" id="download">
+            <a href="/Move.It.apk" download="Move.It.apk">download apk</a>
+            </a>
+          </div> 
+      </div>
+
         </section>
         </div>
       </main>
     </div>
+
     <!--  JavaScript for the nav bar-->
     <script>
     function myFunction() {
@@ -105,45 +100,6 @@
         x.className = "topnav";
       }
     }
-    </script>
-    <!-- JavaScript for the lightbox-->
-    <script>
-      function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
     </script>
   </body>
 </html>
