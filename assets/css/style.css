@@ -11,10 +11,6 @@ body {
 	text-transform: uppercase;
 }
 
-a {
-	display: flex;
-}
-
 /* background && text colour */
 .body {
 	color: #ffffff;
@@ -26,28 +22,16 @@ a {
 }
 
 .topnav a {
-	float: left;
+	float: none;
 	display: block;
 	color: #ffffff;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 28px;
 	font-weight: 500;
 }
 
-.topnav a:hover {
-	border-bottom: solid #ffffff;
-}
-
-.topnav a.active {
-	background-color: #000000;
-	color: #ffffff;
-}
-
-.topnav .icon {
-	display: none;
-}
 /* thsese are the pages*/
 .page {
 	min-height: 100vh;
@@ -78,17 +62,6 @@ a {
 	justify-self: center;
 	display: flex;
 }
-/*The inside images*/
-.image-container img {
-	height: 400px;
-	cursor: pointer;
-}
-
-.team img {
-	height: 400px;
-	cursor: pointer;
-}
-
 /*The text on the side*/
 .details {
 	grid-column: 2/3;
@@ -112,28 +85,5 @@ h1 {
 }
 a {
 	color: #ffffff;
-	text-decoration: none;
-}
-/* the button */
-#download a:link,
-a:visited {
-	background-color: #000;
-	color: #ffffff;
-	padding: 14px 25px;
-}
-.button {
-	padding-top: 400px;
-	align-self: center;
-	justify-self: center;
-}
-
-#download a:hover,
-a:active {
-	color: #000;
-	background-color: #ffffff;
-}
-#download a {
-	font-size: 16px;
-	font-weight: 300;
 	text-decoration: none;
 }
