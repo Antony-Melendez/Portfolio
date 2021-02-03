@@ -87,3 +87,26 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 }
+
+/* this works for iphones  */
+@media screen and (max-width: 600px) {
+	.details {
+		width: 100%;
+	}
+	h1 {
+		color: #ffffff;
+		font-size: 48px;
+		font-weight: 800;
+	}
+	.details h2 {
+		color: #2d3436;
+		font-size: 24px;
+		font-weight: 500;
+	}
+	.details p {
+		color: #2d3436;
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 50px;
+	}
+}
