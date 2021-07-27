@@ -19,7 +19,7 @@ html, body
 		margin: 0;
 		padding: 0;
 		font-weight: 700;
-		color: #2B3F48;
+		color: #000000;
 	}
 	
 	p, ol, ul
@@ -36,7 +36,7 @@ html, body
 
 	a
 	{
-		color: #0000FF;
+		color: #ffffff;
 	}
 	
 	a:hover
@@ -107,7 +107,7 @@ html, body
 		text-transform: uppercase;
 		font-weight: 400;
 		font-size: 1em;
-		color: #FFF;
+		color: rgb(255, 255, 255);
 	}
 	
 	.button:before
@@ -141,7 +141,7 @@ html, body
 	.title .byline
 	{
 		font-size: 1.7em;
-		color: #6F6F6F;
+		color: #000000;
 	}
 		
 /*********************************************************************************/
@@ -158,7 +158,7 @@ html, body
 	
 	.box1,
 	.box2,
-	.box3,
+	.box3
 	{
 		float: left;
 		margin-right: 20px;
@@ -267,7 +267,7 @@ html, body
 		background: #af1641;
 		background-size: cover;
 		text-align: center;
-		color: rgba(255,255,255,.8);
+		color: rgb(255, 255, 255);
 	}
 
 	#banner .title
@@ -283,7 +283,7 @@ html, body
 
 	#banner .title .byline
 	{
-		color: rgba(255,255,255,.6);
+		color: rgba(255, 255, 255);
 	}
 	
 	#banner .button
@@ -309,29 +309,6 @@ html, body
 		text-align: center;
 	}
 
-/*********************************************************************************/
-/* Content                                                                       */
-/*********************************************************************************/
-
-	#content
-	{
-	}
-
-/*********************************************************************************/
-/* Sidebar                                                                       */
-/*********************************************************************************/
-
-	#sidebar
-	{
-	}
-
-/*********************************************************************************/
-/* Footer                                                                        */
-/*********************************************************************************/
-
-	#footer
-	{
-	}
 
 /*********************************************************************************/
 /* Copyright                                                                     */
@@ -348,7 +325,7 @@ html, body
 	{
 		text-align: center;
 		font-size: 1em;
-		color: rgba(255, 255, 255, 0.5);
+		color: rgba(255, 255, 255);
 	}
 	
 /*********************************************************************************/
@@ -360,13 +337,13 @@ html, body
 		overflow: hidden;
 		padding: 5em 0em;
 		background: #af1641;
-		color: rgba(255,255,255,.8);
+		color: rgba(255,255,255);
 		text-align: center;
 	}
 
 	#featured a
 	{
-		color: rgba(255,255,255,1);
+		color: rgba(255,255,255);
 	}
 	
 	#featured .button
@@ -390,7 +367,7 @@ html, body
 
 	#featured .title .byline
 	{
-		color: rgba(255,255,255,.6);
+		color: rgb(255, 255, 255);
 	}
 
 /*********************************************************************************/
@@ -402,7 +379,7 @@ html, body
 	padding: 3em 2em 2em 2em;
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 8px;
-		text-align: center;
+	text-align: center;
 }
 
 
