@@ -25,12 +25,18 @@ html, body
 	p, ol, ul
 	{
 		margin-top: 0;
+		font-size: 18px;
 	}
 	
 	p
 	{
-		line-height: 180%;
+		line-height: 200%;
 		color: #000000;
+	}
+	
+	span
+	{
+		font-size: 18px;
 	}
 	
 
@@ -52,7 +58,7 @@ html, body
 	}
 	
 /*********************************************************************************/
-/* 																						Image Style 								                                                     */
+/* 								Image Style 			                         */
 /*********************************************************************************/
 
 	.image
@@ -129,18 +135,18 @@ html, body
 
 	.title
 	{
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 	}
 	
 	.title h2
 	{
 		text-transform: uppercase;
-		font-size: 2.7em;
+		font-size: 4em;
 	}
-	
+
 	.title .byline
 	{
-		font-size: 1.7em;
+		font-size: 2em;
 		color: #000000;
 	}
 		
@@ -229,7 +235,7 @@ html, body
 	#header
 	{
 		position: relative;
-		padding: 3em 0em;
+		padding: 6em 0em;
 	}
 
 /*********************************************************************************/
@@ -239,20 +245,20 @@ html, body
 	#logo
 	{
 		position: absolute;
-		top: 1em;
+		top: 2em;
 		left: 0;
 	}
 	
 	#logo h1
 	{
-		color: #FFF;
+		color: rgb(255, 255, 255);
 	}
 	
 	#logo a
 	{
 		text-decoration: none;
 		text-transform: uppercase;
-		color: #FFF;
+		color: rgb(255, 255, 255);
 	}
 
 
@@ -288,7 +294,7 @@ html, body
 	
 	#banner .button
 	{
-		margin-top: 3em;
+		margin-top: 4em;
 		background: #dc572e !important;
 	}
 
@@ -298,7 +304,7 @@ html, body
 
 	#page
 	{
-		padding: 5em 0em;
+		padding: 8em 0em;
 		text-align: center;
 	}
 	
@@ -317,8 +323,8 @@ html, body
 	#copyright
 	{
 		overflow: hidden;
-		padding: 5em 0em;
-		border-top: 1px solid rgba(255, 255, 255, 0.08);
+		padding: 6em 0em;
+		border-top: 2px solid rgba(0, 0, 0, 0.08);
 	}
 	
 	#copyright p
@@ -335,7 +341,7 @@ html, body
 	#featured
 	{
 		overflow: hidden;
-		padding: 5em 0em;
+		padding: 8em 0em;
 		background: #af1641;
 		color: rgba(255,255,255);
 		text-align: center;
@@ -376,33 +382,8 @@ html, body
 
 .box
 {
-	padding: 3em 2em 2em 2em;
-	border: 1px solid rgba(0,0,0,0.1);
+	padding: 2em 2em 2em 2em;
+	border: 2px solid rgb(0, 0, 0);
 	border-radius: 8px;
 	text-align: center;
 }
-
-
-	#extra
-	{
-		overflow: hidden;
-		padding: 5em 0em;
-	}
-	
-	#extra .title
-	{
-		text-align: center;
-	}
-	
-	#extra .button
-	{
-		margin-top: 5em;
-	}
-	
-	#extra .fa
-	{
-		display: block;
-		margin-bottom: 0.5em;
-		text-align: center;
-		font-size: 3em;
-	}
