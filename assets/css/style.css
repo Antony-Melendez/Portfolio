@@ -1,391 +1,346 @@
-html, body
-	{
-		height: 100%;
-	}
-	
-	body
-	{
-		font-family: 'Open Sans', sans-serif;
-		margin: 0px;
-		padding: 0px;
-		background: #000000;
-		font-size: 10pt;
-		font-weight: 300;
-		color: #ffffff;
-	}
-	
-	
-	h1, h2, h3
-	{
-		margin: 0;
-		padding: 0;
-		font-weight: 700;
-		color: #000000;
-	}
-	
-	p, ol, ul
-	{
-		margin-top: 0;
-		font-size: 18px;
-	}
-	
-	p
-	{
-		line-height: 200%;
-		color: #000000;
-	}
-	
-	span
-	{
-		font-size: 18px;
-	}
-	
+html,
+body {
+  height: 100%;
+}
 
-	a
-	{
-		color: #ffffff;
-	}
-	
-	a:hover
-	{
-		text-decoration: none;
-	}
-	
-	.container
-	{
-		overflow: hidden;
-		margin: 0em auto;
-		width: 1000px;
-	}
-	
-	
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: #000000;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 1000;
+  color: #000000;
+}
+
+p,
+ol,
+ul {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 200%;
+  font-weight: 200;
+}
+
+span {
+  color: #fff;
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 200%;
+  font-weight: 200;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  overflow: hidden;
+  margin: 0em auto;
+  width: 800px;
+}
+
 /*********************************************************************************/
 /* 								Image Style 			                         */
 /*********************************************************************************/
 
-	.image
-	{
-		display: inline-block;
-	}
-	
-	.image img
-	{
-		display: block;
-		width: 100%;
-	}
-	
-	.image-full
-	{
-		display: block;
-		width: 100%;
-		margin: 0 0 2em 0;
-	}
-	
-	.image-left
-	{
-		float: left;
-		margin: 0 2em 2em 0;
-	}
-	
-	.image-centered
-	{
-		display: block;
-		margin: 0 0 2em 0;
-	}
-	
-	.image-centered img
-	{
-		margin: 0 auto;
-		width: auto;
-	}
+.image {
+  display: inline-block;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+}
+
+.image-full {
+  display: block;
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+.image-left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+.image-centered {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+.image-centered img {
+  margin: 0 auto;
+  width: auto;
+}
 
 /*********************************************************************************/
 /* Button Style                                                                  */
 /*********************************************************************************/
 
-	.button
-	{
-		display: inline-block;
-		padding: 0em 3em;
-		background: #af1641;
-		border-radius: 7px;
-		letter-spacing: 0.20em;
-		line-height: 4em;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-weight: 400;
-		font-size: 1em;
-		color: rgb(255, 255, 255);
-	}
-	
-	.button:before
-	{
-		display: inline-block;
-		background: #FFC31F;
-		margin-right: 1em;
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		border-radius: 20px;
-		text-align: center;
-		color: #272925;
-	}
-	
+.button {
+  display: inline-block;
+  padding: 0em 1em;
+  background: #af1641;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+.button:before {
+  display: inline-block;
+  background: #ffc31f;
+  margin-right: 1em;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: #272925;
+}
+
 /*********************************************************************************/
 /* Heading Titles                                                                */
 /*********************************************************************************/
 
-	.title
-	{
-		margin-bottom: 2em;
-	}
-	
-	.title h2
-	{
-		text-transform: uppercase;
-		font-size: 4em;
-	}
+.title {
+  margin-bottom: 2em;
+}
 
-	.title .byline
-	{
-		font-size: 2em;
-		color: #000000;
-	}
-		
+.title h2 {
+  text-transform: uppercase;
+  font-size: 4em;
+}
+.title p {
+  color: #000000;
+}
+
+.title .byline {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 /*********************************************************************************/
 /* 4-column                                                                      */
 /*********************************************************************************/
 
-	.box1,
-	.box2,
-	.box3,
-	.box4
-	{
-		width: 235px;
-	}
-	
-	.box1,
-	.box2,
-	.box3
-	{
-		float: left;
-		margin-right: 20px;
-	}
-	
-	.box4
-	{
-		float: right;
-	}
-	
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 235px;
+}
+
+.box1,
+.box2,
+.box3 {
+  float: left;
+  margin-right: 20px;
+}
+
+.box4 {
+  float: right;
+}
+
 /*********************************************************************************/
 /* 3-column                                                                      */
 /*********************************************************************************/
 
-	.boxA,
-	.boxB,
-	.boxC
-	{
-		width: 320px;
-	}
+.boxA,
+.boxB,
+.boxC {
+  width: 300px;
+}
 
-	.boxA,
-	.boxB
-	{
-		float: left;
-		margin-right: 20px;
-	}
-	
-	.boxC
-	{
-		float: right;
-	}
+.boxA,
+.boxB {
+  float: left;
+  margin-right: 20px;
+}
+
+.boxC {
+  float: right;
+}
 
 /*********************************************************************************/
 /* 2-column                                                                      */
 /*********************************************************************************/
 
-	.tbox1,
-	.tbox2
-	{
-		width: 575px;
-	}
-	
-	.tbox1
-	{
-		float: left;
-	}
+.tbox1,
+.tbox2 {
+  width: 550px;
+}
 
-	.tbox2
-	{
-		float: right;
-	}
-	
-	#wrapper
-	{
-		background: #FFF;
-	}
+.tbox1 {
+  float: left;
+}
+
+.tbox2 {
+  float: right;
+}
+
+#wrapper {
+  background: #fff;
+}
 
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
 
-	#header-wrapper
-	{
-		background: #af1641;
-	}
+#header-wrapper {
+  background: #af1641;
+}
 
-	#header
-	{
-		position: relative;
-		padding: 6em 0em;
-	}
+#header {
+  position: relative;
+  padding: 6em 0em;
+}
 
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
 
-	#logo
-	{
-		position: absolute;
-		top: 2em;
-		left: 0;
-	}
-	
-	#logo h1
-	{
-		color: rgb(255, 255, 255);
-	}
-	
-	#logo a
-	{
-		text-decoration: none;
-		text-transform: uppercase;
-		color: rgb(255, 255, 255);
-	}
+#logo {
+  position: absolute;
+  top: 2em;
+  left: 0;
+}
 
+#logo h1 {
+  color: rgb(255, 255, 255);
+}
+
+#logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
 
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
 
-	#banner
-	{
-		overflow: hidden;
-		padding: 7em 0em 5em 0em;
-		background: #af1641;
-		background-size: cover;
-		text-align: center;
-		color: rgb(255, 255, 255);
-	}
+#banner {
+  overflow: hidden;
+  padding: 7em 0em 5em 0em;
+  background: #af1641;
+  background-size: cover;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
 
-	#banner .title
-	{
-		margin-bottom: 1em;
-		text-transform: uppercase !important;
-	}
+#banner .title {
+  margin-bottom: 1em;
+  text-transform: uppercase !important;
+}
 
-	#banner .title h2
-	{
-		color: #FFF;
-	}
+#banner .title h2 {
+  color: #fff;
+}
 
-	#banner .title .byline
-	{
-		color: rgba(255, 255, 255);
-	}
-	
-	#banner .button
-	{
-		margin-top: 4em;
-		background: #dc572e !important;
-	}
+#banner .title .byline {
+  color: rgba(255, 255, 255);
+}
+
+#banner .button {
+  margin-top: 4em;
+  background: #dc572e !important;
+}
 
 /*********************************************************************************/
 /* Page                                                                          */
 /*********************************************************************************/
 
-	#page
-	{
-		padding: 8em 0em;
-		text-align: center;
-	}
-	
-	#page .button
-	{
-		margin-top: 2em;
-		display: inline-block;
-		text-align: center;
-	}
+#page {
+  padding: 8em 0em;
+  text-align: center;
+}
 
+#page .button {
+  margin-top: 2em;
+  display: inline-block;
+  text-align: center;
+}
 
 /*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
 
-	#copyright
-	{
-		overflow: hidden;
-		padding: 6em 0em;
-		border-top: 2px solid rgba(0, 0, 0, 0.08);
-	}
-	
-	#copyright p
-	{
-		text-align: center;
-		font-size: 1em;
-		color: rgba(255, 255, 255);
-	}
-	
-/*********************************************************************************/
-/* Featured                                                                      */
-/*********************************************************************************/
+#copyright {
+  overflow: hidden;
+  padding: 6em 0em;
+  border-top: 2px solid rgba(0, 0, 0, 0.08);
+}
 
-	#featured
-	{
-		overflow: hidden;
-		padding: 8em 0em;
-		background: #af1641;
-		color: rgba(255,255,255);
-		text-align: center;
-	}
-
-	#featured a
-	{
-		color: rgba(255,255,255);
-	}
-	
-	#featured .button
-	{
-		background: #FFF;
-		margin-top: 3em;
-		font-size: 1em;
-		color: #af1641;
-	}
-
-	#featured img
-	{
-		margin-bottom: 3em;
-		border-radius: 7px;
-	}
-
-	#featured .title h2
-	{
-		color: #FFF;
-	}
-
-	#featured .title .byline
-	{
-		color: rgb(255, 255, 255);
-	}
+#copyright p {
+  text-align: center;
+  font-size: 1em;
+  color: rgba(255, 255, 255);
+}
 
 /*********************************************************************************/
 /* Featured                                                                      */
 /*********************************************************************************/
 
-.box
-{
-	padding: 2em 2em 2em 2em;
-	border: 2px solid rgb(0, 0, 0);
-	border-radius: 8px;
-	text-align: center;
+#featured {
+  overflow: hidden;
+  padding: 8em 0em;
+  background: #af1641;
+  color: rgba(255, 255, 255);
+  text-align: center;
+}
+
+#featured a {
+  color: rgba(255, 255, 255);
+}
+
+#featured .button {
+  background: #fff;
+  margin-top: 3em;
+  font-size: 1em;
+  color: #af1641;
+}
+
+#featured img {
+  margin-bottom: 3em;
+  border-radius: 7px;
+}
+
+#featured .title h2 {
+  color: #fff;
+}
+#featured .title p {
+  color: #fff;
+}
+
+#featured .title .byline {
+  color: rgb(255, 255, 255);
+}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+.box {
+  padding: 2em 2em 2em 2em;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  text-align: center;
 }
